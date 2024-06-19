@@ -1,0 +1,28 @@
+.work-start {
+    display: flex;
+    justify-content: space-between; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.work-row {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 0; 
+}
+
+.work-left,
+.media-body {
+    flex-basis: calc(50% - 20px); /* Adjust the width of each item */
+    max-width: calc(50% - 20px); /* Adjust the maximum width of each item */
+    margin-bottom: 40px; /* Add some space between items */
+}
+
+@media screen and (max-width: 768px) {
+    .work-left,
+    .media-body {
+        flex-basis: 100%; /* Full width on smaller screens */
+        max-width: 100%; /* Full width on smaller screens */
+    }
+}
